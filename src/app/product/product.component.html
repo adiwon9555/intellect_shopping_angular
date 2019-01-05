@@ -1,0 +1,20 @@
+
+
+
+<div class="container">
+  
+  <div class="row">
+    <div *ngFor='let product of products;index as i' class="col-sm-4">
+      <div onclick="addCart(product)" class="card" style="margin: 2%">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name}}</h5>
+        </div>
+        <div class="card-footer text-right">
+          <span class="text-muted">{{product.price}}&nbsp;&nbsp;
+            
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
